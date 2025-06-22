@@ -60,7 +60,7 @@ export const Hero = () => {
             href="https://github.com/astrod333"
             target="_blank"
             rel="noopener noreferrer"
-            className="w-full md:w-fit cursor-pointer flex items-center justify-center gap-2 h-12 px-8 py-3 rounded-full border-2 border-zinc-950 dark:text-zinc-50 font-medium dark:border-zinc-50 text-zinc-900"
+            className="w-auto md:w-fit cursor-pointer flex items-center justify-center gap-1 h-9 px-2 py-1 text-xs md:h-12 md:px-8 md:py-3 md:text-base rounded-full border-2 border-zinc-950 dark:text-zinc-50 font-medium dark:border-zinc-50 text-zinc-900"
           >
             <SiGithub className="size-4 fill-zinc-950 dark:fill-zinc-50" />
             Follow
