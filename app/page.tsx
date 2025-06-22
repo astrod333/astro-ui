@@ -90,8 +90,6 @@ export default function Page() {
     <main className="flex flex-col gap-4 items-center justify-start min-h-screen w-full pt-4 pb-4 sm:pb-[4rem] px-4 sm:px-0 mt-[4rem]">
       <Hero />
       <div className="flex flex-col items-start justify-center gap-4 w-full sm:w-[90%] md:w-[80%] lg:w-[70%]">
-        <h1 className="text-lg sm:text-xl font-medium">AstroUI Components</h1>
-        <Separator />
         <div className="border dark:border-zinc-900 border-zinc-200 rounded p-4 w-full">
           <h2 className="text-md font-medium mb-2">Installation Instructions</h2>
           <p className="mb-2 text-sm">To use these components, you need to install shadcn/ui. Follow these steps:</p>

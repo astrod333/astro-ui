@@ -63,7 +63,7 @@ export const Hero = () => {
             className="w-full md:w-fit cursor-pointer flex items-center justify-center gap-2 h-12 px-8 py-3 rounded-full border-2 border-zinc-950 dark:text-zinc-50 font-medium dark:border-zinc-50 text-zinc-900"
           >
             <SiGithub className="size-4 fill-zinc-950 dark:fill-zinc-50" />
-            Follow on GitHub
+            Follow
           </motion.a>
         </motion.div>
 
