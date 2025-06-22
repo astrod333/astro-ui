@@ -17,6 +17,7 @@ import { Separator } from "@/components/ui/separator";
 import { codeSnippets } from '@/lib/codeSnippets';
 import FloatingBadge from "@/components/floating-badge";
 import Buttons from "@/components/buttons";
+import { Hero } from "@/components/hero";
 // Types
 type ComponentName = 'animatedCard' | 'floatingNavbar' | 'chatGPTCarousel' | 'videoPlayer' | 'SearchComponent' | 'buttons';
 
@@ -87,6 +88,7 @@ export default function Page() {
 
   return (
     <main className="flex flex-col gap-4 items-center justify-start min-h-screen w-full pt-4 pb-4 sm:pb-[4rem] px-4 sm:px-0 mt-[4rem]">
+      <Hero />
       <div className="flex flex-col items-start justify-center gap-4 w-full sm:w-[90%] md:w-[80%] lg:w-[70%]">
         <h1 className="text-lg sm:text-xl font-medium">AstroUI Components</h1>
         <Separator />
