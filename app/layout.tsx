@@ -16,7 +16,12 @@ export const metadata: Metadata = {
   description: "A collection of components made with TailwindCSS and Shadcn UI",
   openGraph: {
     description: "A collection of components made with TailwindCSS and Shadcn UI",
-    images: ['https://76czsvtte3.ufs.sh/f/koRwEFlaRNkeo9i6qxnCPV2aRnH4GKOscbEhfz0Z6AlJ9dM8'],
+    images: [
+      {
+        url: "/astroui.jpg",
+        alt: "Astro UI",
+      },
+    ],
     url: 'https://www.astroui.xyz/'
   },
   twitter: {
@@ -26,7 +31,12 @@ export const metadata: Metadata = {
     siteId: "",
     creator: "@uiastro",
     creatorId: "",
-    images: ['https://76czsvtte3.ufs.sh/f/koRwEFlaRNkeo9i6qxnCPV2aRnH4GKOscbEhfz0Z6AlJ9dM8'],
+    images: [
+      {
+        url: "/astroui.jpg",
+        alt: "Astro UI",
+      },
+    ],
   },
 }
 
