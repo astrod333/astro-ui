@@ -80,7 +80,7 @@ export default function Page() {
         </div>
       ) : (
         <div className="w-full">
-          <Component videoSrc={"https://76czsvtte3.ufs.sh/f/koRwEFlaRNkeBxvUufqaFbG63gx7zd8CvlAESjeNiwrt4mDT"} title={"astro"} description={" launch a app in minutes."} image={"https://76czsvtte3.ufs.sh/f/koRwEFlaRNkeo9i6qxnCPV2aRnH4GKOscbEhfz0Z6AlJ9dM8"} />
+          <Component videoSrc={"https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"} title={"astro"} description={" launch a app in minutes."} image={"https://76czsvtte3.ufs.sh/f/koRwEFlaRNkeo9i6qxnCPV2aRnH4GKOscbEhfz0Z6AlJ9dM8"} />
         </div>
       )}
     </div>
