@@ -1,4 +1,4 @@
-import SearchComponent from "@/components/glowing-searchbar";
+
 
 export const codeSnippets = {
   animatedCard: `"use client"

@@ -1,0 +1,27 @@
+
+> templates@0.1.0 build /home/astro/Desktop/astro-ui
+> next build
+
+   ▲ Next.js 15.4.9
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully in 11.0s
+   Linting and checking validity of types ...
+
+Failed to compile.
+
+./components/ui/input.tsx
+5:18  Error: An interface declaring no members is equivalent to its supertype.  @typescript-eslint/no-empty-object-type
+
+./components/ui/textarea.tsx
+5:18  Error: An interface declaring no members is equivalent to its supertype.  @typescript-eslint/no-empty-object-type
+
+./components/ui/theme-toggle-button.tsx
+68:6  Warning: React Hook React.useCallback has missing dependencies: 'start', 'updateStyles', 'url', and 'variant'. Either include them or remove the dependency array.  react-hooks/exhaustive-deps
+
+./components/video-player.tsx
+77:19  Warning: The ref value 'playerRef.current' will likely have changed by the time this effect cleanup function runs. If this ref points to a node rendered by React, copy 'playerRef.current' to a variable inside the effect, and use that variable in the cleanup function.  react-hooks/exhaustive-deps
+81:6  Warning: React Hook useEffect has a missing dependency: 'isPlaying'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+
+info  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/app/api-reference/config/eslint#disabling-rules
+ ELIFECYCLE  Command failed with exit code 1.

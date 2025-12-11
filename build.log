@@ -1,0 +1,40 @@
+
+> templates@0.1.0 build /home/astro/Desktop/astro-ui
+> next build
+
+   ▲ Next.js 16.0.9 (Turbopack)
+
+   Creating an optimized production build ...
+Error: Cannot apply unknown utility class `border-border`
+    [2m[at onInvalidCandidate (/home/astro/Desktop/astro-ui/node_modules/.pnpm/tailwindcss@4.1.18/node_modules/tailwindcss/dist/lib.js:21:1511)][0m
+    [2m[at Te (/home/astro/Desktop/astro-ui/node_modules/.pnpm/tailwindcss@4.1.18/node_modules/tailwindcss/dist/lib.js:16:36652)][0m
+    [2m[at /home/astro/Desktop/astro-ui/node_modules/.pnpm/tailwindcss@4.1.18/node_modules/tailwindcss/dist/lib.js:21:355][0m
+    [2m[at Rr (/home/astro/Desktop/astro-ui/node_modules/.pnpm/tailwindcss@4.1.18/node_modules/tailwindcss/dist/lib.js:3:1718)][0m
+    [2m[at _ (/home/astro/Desktop/astro-ui/node_modules/.pnpm/tailwindcss@4.1.18/node_modules/tailwindcss/dist/lib.js:3:1377)][0m
+    [2m[at $e (/home/astro/Desktop/astro-ui/node_modules/.pnpm/tailwindcss@4.1.18/node_modules/tailwindcss/dist/lib.js:21:172)][0m
+    [2m[at un (/home/astro/Desktop/astro-ui/node_modules/.pnpm/tailwindcss@4.1.18/node_modules/tailwindcss/dist/lib.js:38:294)][0m
+    [2m[at async cn (/home/astro/Desktop/astro-ui/node_modules/.pnpm/tailwindcss@4.1.18/node_modules/tailwindcss/dist/lib.js:38:631)][0m
+    [2m[at async Xr (/home/astro/Desktop/astro-ui/node_modules/.pnpm/@tailwindcss+node@4.1.18/node_modules/@tailwindcss/node/dist/index.js:10:3417)][0m
+    [2m[at async I (/home/astro/Desktop/astro-ui/node_modules/.pnpm/@tailwindcss+postcss@4.1.18/node_modules/@tailwindcss/postcss/dist/index.js:10:3977)][0m
+
+> Build error occurred
+Error: Turbopack build failed with 1 errors:
+./app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: /home/astro/Desktop/astro-ui/app/globals.css:1:1: Cannot apply unknown utility class `border-border`
+    at Input.error (node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/input.js:135:16) [/home/astro/Desktop/astro-ui/.next/build/chunks/node_modules__pnpm_806d01c0._.js:4651:22]
+    at Root.error (node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/node.js:146:32) [/home/astro/Desktop/astro-ui/.next/build/chunks/node_modules__pnpm_806d01c0._.js:928:38]
+    [at Object.Once (/home/astro/Desktop/astro-ui/node_modules/.pnpm/@tailwindcss+postcss@4.1.18/node_modules/@tailwindcss/postcss/dist/index.js:10:6911)]
+    at async LazyResult.runAsync (node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/lazy-result.js:293:11) [/home/astro/Desktop/astro-ui/.next/build/chunks/node_modules__pnpm_806d01c0._.js:6206:21]
+    at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34) [/home/astro/Desktop/astro-ui/.next/build/chunks/[root-of-the-server]__51225daf._.js:146:36]
+    at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23) [/home/astro/Desktop/astro-ui/.next/build/chunks/[root-of-the-server]__974941ed._.js:443:31]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+
+    at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34) [/home/astro/Desktop/astro-ui/.next/build/chunks/[root-of-the-server]__51225daf._.js:146:36])
+    at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23) [/home/astro/Desktop/astro-ui/.next/build/chunks/[root-of-the-server]__974941ed._.js:443:31])
+ ELIFECYCLE  Command failed with exit code 1.

@@ -1,0 +1,65 @@
+
+> templates@0.1.0 build /home/astro/Desktop/astro-ui
+> next build
+
+   ▲ Next.js 15.4.9
+
+   Creating an optimized production build ...
+[Error: Cannot apply unknown utility class `border-border`]
+<w> [webpack.cache.PackFileCacheStrategy] Skipped not serializable cache item 'Compilation/modules|/home/astro/Desktop/astro-ui/node_modules/.pnpm/next@15.4.9_@opentelemetry+api@1.9.0_react-dom@19.2.2_react@19.2.2__react@19.2.2/node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!/home/astro/Desktop/astro-ui/node_modules/.pnpm/next@15.4.9_@opentelemetry+api@1.9.0_react-dom@19.2.2_react@19.2.2__react@19.2.2/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!/home/astro/Desktop/astro-ui/app/globals.css': No serializer registered for PostCSSSyntaxError
+<w> while serializing webpack/lib/cache/PackFileCacheStrategy.PackContentItems -> webpack/lib/NormalModule -> webpack/lib/ModuleBuildError -> PostCSSSyntaxError
+Failed to compile.
+
+./app/globals.css:1:1
+Syntax error: tailwindcss: /home/astro/Desktop/astro-ui/app/globals.css Cannot apply unknown utility class `border-border`
+
+> 1 | @import "tailwindcss";
+    | ^
+  2 | 
+  3 |
+
+./app/globals.css
+Syntax error: tailwindcss: /home/astro/Desktop/astro-ui/app/globals.css Cannot apply unknown utility class `border-border` (1:1)
+
+> 1 | @import "tailwindcss";
+    | ^
+  2 | 
+  3 | 
+
+    at tryRunOrWebpackError (/home/astro/Desktop/astro-ui/node_modules/.pnpm/next@15.4.9_@opentelemetry+api@1.9.0_react-dom@19.2.2_react@19.2.2__react@19.2.2/node_modules/next/dist/compiled/webpack/bundle5.js:29:316119)
+    at __webpack_require_module__ (/home/astro/Desktop/astro-ui/node_modules/.pnpm/next@15.4.9_@opentelemetry+api@1.9.0_react-dom@19.2.2_react@19.2.2__react@19.2.2/node_modules/next/dist/compiled/webpack/bundle5.js:29:131532)
+    at __nested_webpack_require_161494__ (/home/astro/Desktop/astro-ui/node_modules/.pnpm/next@15.4.9_@opentelemetry+api@1.9.0_react-dom@19.2.2_react@19.2.2__react@19.2.2/node_modules/next/dist/compiled/webpack/bundle5.js:29:130967)
+    at /home/astro/Desktop/astro-ui/node_modules/.pnpm/next@15.4.9_@opentelemetry+api@1.9.0_react-dom@19.2.2_react@19.2.2__react@19.2.2/node_modules/next/dist/compiled/webpack/bundle5.js:29:131824
+    at symbolIterator (/home/astro/Desktop/astro-ui/node_modules/.pnpm/next@15.4.9_@opentelemetry+api@1.9.0_react-dom@19.2.2_react@19.2.2__react@19.2.2/node_modules/next/dist/compiled/neo-async/async.js:1:14444)
+    at done (/home/astro/Desktop/astro-ui/node_modules/.pnpm/next@15.4.9_@opentelemetry+api@1.9.0_react-dom@19.2.2_react@19.2.2__react@19.2.2/node_modules/next/dist/compiled/neo-async/async.js:1:14824)
+    at Hook.eval [as callAsync] (eval at create (/home/astro/Desktop/astro-ui/node_modules/.pnpm/next@15.4.9_@opentelemetry+api@1.9.0_react-dom@19.2.2_react@19.2.2__react@19.2.2/node_modules/next/dist/compiled/webpack/bundle5.js:14:9224), <anonymous>:15:1)
+    at Hook.CALL_ASYNC_DELEGATE [as _callAsync] (/home/astro/Desktop/astro-ui/node_modules/.pnpm/next@15.4.9_@opentelemetry+api@1.9.0_react-dom@19.2.2_react@19.2.2__react@19.2.2/node_modules/next/dist/compiled/webpack/bundle5.js:14:6378)
+    at /home/astro/Desktop/astro-ui/node_modules/.pnpm/next@15.4.9_@opentelemetry+api@1.9.0_react-dom@19.2.2_react@19.2.2__react@19.2.2/node_modules/next/dist/compiled/webpack/bundle5.js:29:130687
+    at symbolIterator (/home/astro/Desktop/astro-ui/node_modules/.pnpm/next@15.4.9_@opentelemetry+api@1.9.0_react-dom@19.2.2_react@19.2.2__react@19.2.2/node_modules/next/dist/compiled/neo-async/async.js:1:14402)
+-- inner error --
+Syntax error: tailwindcss: /home/astro/Desktop/astro-ui/app/globals.css Cannot apply unknown utility class `border-border` (1:1)
+
+> 1 | @import "tailwindcss";
+    | ^
+  2 | 
+  3 | 
+
+    at Object.<anonymous> (/home/astro/Desktop/astro-ui/node_modules/.pnpm/next@15.4.9_@opentelemetry+api@1.9.0_react-dom@19.2.2_react@19.2.2__react@19.2.2/node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!/home/astro/Desktop/astro-ui/node_modules/.pnpm/next@15.4.9_@opentelemetry+api@1.9.0_react-dom@19.2.2_react@19.2.2__react@19.2.2/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!/home/astro/Desktop/astro-ui/app/globals.css:1:7)
+    at /home/astro/Desktop/astro-ui/node_modules/.pnpm/next@15.4.9_@opentelemetry+api@1.9.0_react-dom@19.2.2_react@19.2.2__react@19.2.2/node_modules/next/dist/compiled/webpack/bundle5.js:29:962717
+    at Hook.eval [as call] (eval at create (/home/astro/Desktop/astro-ui/node_modules/.pnpm/next@15.4.9_@opentelemetry+api@1.9.0_react-dom@19.2.2_react@19.2.2__react@19.2.2/node_modules/next/dist/compiled/webpack/bundle5.js:14:9002), <anonymous>:7:1)
+    at Hook.CALL_DELEGATE [as _call] (/home/astro/Desktop/astro-ui/node_modules/.pnpm/next@15.4.9_@opentelemetry+api@1.9.0_react-dom@19.2.2_react@19.2.2__react@19.2.2/node_modules/next/dist/compiled/webpack/bundle5.js:14:6272)
+    at /home/astro/Desktop/astro-ui/node_modules/.pnpm/next@15.4.9_@opentelemetry+api@1.9.0_react-dom@19.2.2_react@19.2.2__react@19.2.2/node_modules/next/dist/compiled/webpack/bundle5.js:29:131565
+    at tryRunOrWebpackError (/home/astro/Desktop/astro-ui/node_modules/.pnpm/next@15.4.9_@opentelemetry+api@1.9.0_react-dom@19.2.2_react@19.2.2__react@19.2.2/node_modules/next/dist/compiled/webpack/bundle5.js:29:316073)
+    at __webpack_require_module__ (/home/astro/Desktop/astro-ui/node_modules/.pnpm/next@15.4.9_@opentelemetry+api@1.9.0_react-dom@19.2.2_react@19.2.2__react@19.2.2/node_modules/next/dist/compiled/webpack/bundle5.js:29:131532)
+    at __nested_webpack_require_161494__ (/home/astro/Desktop/astro-ui/node_modules/.pnpm/next@15.4.9_@opentelemetry+api@1.9.0_react-dom@19.2.2_react@19.2.2__react@19.2.2/node_modules/next/dist/compiled/webpack/bundle5.js:29:130967)
+    at /home/astro/Desktop/astro-ui/node_modules/.pnpm/next@15.4.9_@opentelemetry+api@1.9.0_react-dom@19.2.2_react@19.2.2__react@19.2.2/node_modules/next/dist/compiled/webpack/bundle5.js:29:131824
+    at symbolIterator (/home/astro/Desktop/astro-ui/node_modules/.pnpm/next@15.4.9_@opentelemetry+api@1.9.0_react-dom@19.2.2_react@19.2.2__react@19.2.2/node_modules/next/dist/compiled/neo-async/async.js:1:14444)
+
+Generated code for /home/astro/Desktop/astro-ui/node_modules/.pnpm/next@15.4.9_@opentelemetry+api@1.9.0_react-dom@19.2.2_react@19.2.2__react@19.2.2/node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!/home/astro/Desktop/astro-ui/node_modules/.pnpm/next@15.4.9_@opentelemetry+api@1.9.0_react-dom@19.2.2_react@19.2.2__react@19.2.2/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!/home/astro/Desktop/astro-ui/app/globals.css
+
+Import trace for requested module:
+./app/globals.css
+
+
+> Build failed because of webpack errors
+ ELIFECYCLE  Command failed with exit code 1.

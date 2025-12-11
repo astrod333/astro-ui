@@ -5,7 +5,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react"
 import { Toaster } from "@/components/ui/sonner"
-import { ConsentManagerProvider, CookieBanner, ConsentManagerDialog } from "@c15t/nextjs";
+
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.astroui.xyz"),
@@ -47,33 +47,24 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-        <html lang="en" 
-        className="scroll-smooth">
-          <body
-            className={`${GeistSans.variable} ${GeistMono.variable}`}
-          >
-    		<ConsentManagerProvider options={{
-    					mode: 'c15t',
-    					backendURL: '/api/c15t',
-    					consentCategories: ['necessary', 'marketing'], // Optional: Specify which consent categories to show in the banner. 
-    					ignoreGeoLocation: true, // Useful for development to always view the banner.
-    				}}>
-    			<CookieBanner />
-    			<ConsentManagerDialog />
-    			
-            <ThemeProvider
-              attribute="class"
-              defaultTheme="dark"
-              enableSystem
-              disableTransitionOnChange
-            >
-              {children}
-              <Analytics />
-              <Toaster />
-            </ThemeProvider>
-          
-    		</ConsentManagerProvider>
-    	</body>
-        </html>
-      )
+    <html lang="en"
+      className="scroll-smooth">
+      <body
+        className={`${GeistSans.variable} ${GeistMono.variable}`}
+      >
+
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="dark"
+          enableSystem
+          disableTransitionOnChange
+        >
+          {children}
+          <Analytics />
+          <Toaster />
+        </ThemeProvider>
+
+      </body>
+    </html >
+  )
 }

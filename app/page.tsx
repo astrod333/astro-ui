@@ -13,7 +13,7 @@ import { VideoPlayer } from "@/components/video-player";
 // UI Components
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Separator } from "@/components/ui/separator";
+
 import { codeSnippets } from '@/lib/codeSnippets';
 import FloatingBadge from "@/components/floating-badge";
 import Buttons from "@/components/buttons";

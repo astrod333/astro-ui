@@ -2,7 +2,7 @@
 
 import { motion } from "motion/react";
 import { MotionIcon } from "./motion";
-import { ArrowRight } from "lucide-react";
+
 import {
   SiRadixui,
   SiTypescript,
@@ -10,7 +10,8 @@ import {
   SiTailwindcss,
 } from "react-icons/si";
 import {
-  FaReact,} from "react-icons/fa"
+  FaReact,
+} from "react-icons/fa"
 
 
 export const Hero = () => {
